@@ -1,8 +1,8 @@
 import * as React from "react"
 
-const Top = () => {
+const About = () => {
   return (
-    <section className="top">
+    <section className="about">
       <div>
         <h5>Hi, my name is</h5>
         <h1>VO XUAN HOANG.</h1>
@@ -16,4 +16,4 @@ const Top = () => {
   )
 }
 
-export default Top
+export default About

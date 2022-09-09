@@ -5211,7 +5211,7 @@ gatsby-sharp@^0.16.0:
 
 gatsby-source-filesystem@^4.22.0:
   version "4.22.0"
-  resolved "https://registry.npmjs.org/gatsby-source-filesystem/-/gatsby-source-filesystem-4.22.0.tgz"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.22.0.tgz#c391874dcca605c1b7ca70ec879c3e736a7bd311"
   integrity sha512-fcL3M+bQgI8DxD+XfB5XAnMvXp6czfqRZs8J2RStw9p02ekLaR/8R9ZYrn8OoQYLB9y9CHid+pdA78Dy3h73cg==
   dependencies:
     "@babel/runtime" "^7.15.4"

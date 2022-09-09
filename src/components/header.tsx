@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <nav>
       <div>
-        <a href="/" className="logo">LOGO</a>
+        <a href="/" className="logo">H</a>
 
         <div className="menu">
           <a href="#" className="menu-item">#1. About Me</a>
