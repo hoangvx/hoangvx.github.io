@@ -1,3 +1,86 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Cascadia Mono";
+  src: url("../fonts/CascadiaMono.woff2");
+}
+
+* {
+  font-family: 'Cascadia Mono', sans-serif;
+}
+
+body {
+  @apply bg-dracular-bg;
+}
+
+/* Header Start */
+nav {
+  @apply fixed w-screen;
+}
+
+nav > div {
+  @apply flex flex-wrap justify-between items-center mx-auto max-w-screen-xl
+  ;
+}
+
+a.logo, div.menu {
+  @apply flex;
+}
+
+div.menu {
+  @apply gap-6 py-4
+    text-dracular-comment text-lg
+  ;
+}
+
+a.menu-item {
+  @apply self-center
+    hover:text-dracular-cyan hover:scale-105
+  ;
+}
+
+a.menu-btn {
+  @apply border-dracular-cyan border-2 rounded-lg
+    px-4 py-2
+    text-dracular-cyan
+    hover:text-dracular-green hover:border-dracular-green
+    transition duration-300
+  ;
+}
+
+/* Header End */
+
+/* TOP Start */
+
+section.top {
+  @apply h-screen
+    flex justify-center
+  ;
+}
+
+section.top > div {
+  @apply self-center flex flex-col
+    mx-auto max-w-screen-lg
+    gap-y-4
+  ;
+}
+
+section.top h5 {
+  @apply text-dracular-pink text-2xl;
+}
+
+section.top h1 {
+  @apply text-dracular-green text-6xl;
+}
+
+section.top h3 {
+  @apply text-dracular-orange text-5xl;
+}
+
+section.top p {
+  @apply text-dracular-comment text-lg;
+}
+
+/* TOP End */
