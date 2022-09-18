@@ -17,11 +17,11 @@ body {
 
 /* Header Start */
 nav {
-  @apply fixed w-full bg-dracular-bg z-10;
+  @apply fixed w-screen z-10 bg-dracular-bg py-3;
 }
 
 nav > div {
-  @apply flex flex-wrap justify-between items-center mx-auto max-w-screen-xl
+  @apply flex flex-wrap justify-between items-center mx-auto max-w-screen-lg
     flex-col md:flex-row
   ;
 }
@@ -31,7 +31,7 @@ a.logo, div.menu {
 }
 
 div.menu {
-  @apply gap-6 py-4
+  @apply hidden md:flex gap-6 py-4
     text-dracular-comment text-lg
   ;
 }
@@ -82,7 +82,7 @@ a.logo svg:nth-child(3) path:nth-child(2) { animation: fillColorFlip 3s linear i
 
 section.top {
   @apply h-screen
-    flex justify-center
+    flex justify-center px-2 md:px-0
   ;
 }
 
@@ -138,7 +138,8 @@ section.about div.title h2 {
 }
 
 section.about div.content {
-  @apply flex gap-y-4
+  @apply gap-y-4 px-2 md:px-0
+    flex flex-col-reverse md:flex-row
   ;
 }
 
@@ -170,8 +171,8 @@ section.about div.left p span {
 
 /* Experience Start */
 section.experience {
-  @apply h-screen
-    flex flex-col justify-center
+  @apply min-h-screen
+    flex flex-col justify-center pb-12
   ;
 }
 
@@ -196,7 +197,7 @@ section.experience div.title h2 {
 }
 
 section.experience div.content {
-  @apply flex gap-y-12 flex-col
+  @apply flex gap-y-12 flex-col px-2 md:px-0
   ;
 }
 
@@ -262,7 +263,8 @@ section.work div.title h2 {
 }
 
 section.work div.content {
-  @apply flex gap-y-24 flex-col
+  @apply flex flex-col px-2 md:px-0
+    gap-y-12 md:gap-y-24
   ;
 }
 
@@ -277,12 +279,16 @@ section.work div.content h2 span {
 }
 
 section.work div.content > div {
-  @apply flex gap-6 text-right
+  @apply flex
+    flex-col md:flex-row
+    text-left md:text-right
+    gap-6
   ;
 }
 
 section.work div.content > div:nth-child(2n) {
-  @apply flex-row-reverse text-left
+  @apply text-left
+    flex-col md:flex-row-reverse
   ;
 }
 
@@ -326,7 +332,8 @@ section.contact div.title h2 {
 }
 
 section.contact div.content > div {
-  @apply px-72 text-center text-dracular-comment py-6
+  @apply text-center text-dracular-comment py-6
+   px-2 md:px-72 
   ;
 }
 
@@ -376,7 +383,8 @@ section.footer > div {
 }
 
 section.footer > div > div {
-  @apply flex flex-row gap-2
+  @apply flex gap-2
+    flex-col-reverse md:flex-row
   ;
 }
 
