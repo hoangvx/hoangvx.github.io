@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+env:
+  YARN_CACHE_FOLDER: .cache/yarn
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -19,13 +22,13 @@ jobs:
       - name: Cache dependencies
         uses: actions/cache@v2
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          path: ${YARN_CACHE_FOLDER}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-yarn-
 
-      - run: npm ci
-      - run: npm run build
+      - run: rm -rf node_modules && yarn install --frozen-lockfile
+      - run: yarn build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
