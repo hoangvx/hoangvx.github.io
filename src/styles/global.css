@@ -17,11 +17,12 @@ body {
 
 /* Header Start */
 nav {
-  @apply fixed w-screen bg-dracular-bg z-10;
+  @apply fixed w-full bg-dracular-bg z-10;
 }
 
 nav > div {
   @apply flex flex-wrap justify-between items-center mx-auto max-w-screen-xl
+    flex-col md:flex-row
   ;
 }
 
@@ -364,12 +365,30 @@ section.splash svg:nth-child(3) path:nth-child(2) { animation: fillColorFlip 3s 
 
 /* Footer Start */
 section.footer {
-  @apply w-screen bg-dracular-bg;
+  @apply w-screen
   ;
 }
 
 section.footer > div {
-  @apply flex flex-wrap justify-between items-center mx-auto max-w-screen-xl
+  @apply flex flex-wrap justify-between items-center mx-auto max-w-screen-lg
+  bg-dracular-dark text-dracular-text
+  ;
+}
+
+section.footer > div > div {
+  @apply flex flex-row gap-2
+  ;
+}
+
+section.footer > div > div > * {
+  @apply hover:bg-dracular-selection hover:cursor-pointer
+    p-1
+  ;
+}
+
+section.footer .copyright {
+  @apply bg-dracular-purple text-dracular-dark
+    hover:bg-dracular-purple
   ;
 }
 /* Footer End */

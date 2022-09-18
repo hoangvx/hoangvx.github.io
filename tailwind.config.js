@@ -14,6 +14,8 @@ module.exports = {
       'dracular-pink': '#E371BE',
       'dracular-orange': '#EDAF66',
       'dracular-text': '#F7F7F0',
+      'dracular-selection': '#3C3E4F',
+      'dracular-purple': '#AB8AF5'
     },
     extend: {},
   },
