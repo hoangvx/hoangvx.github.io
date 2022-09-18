@@ -17,7 +17,7 @@ body {
 
 /* Header Start */
 nav {
-  @apply fixed w-screen;
+  @apply fixed w-screen bg-dracular-bg z-10;
 }
 
 nav > div {
@@ -50,6 +50,31 @@ a.menu-btn {
   ;
 }
 
+a.logo svg path:nth-child(1) { @apply stroke-dracular-cyan; }
+a.logo svg path:nth-child(2) { @apply fill-dracular-cyan; }
+
+a.logo svg:nth-child(1) path:nth-child(1) { animation: strokeColorFlip 3s linear infinite; animation-delay: 0s; }
+a.logo svg:nth-child(1) path:nth-child(2) { animation: fillColorFlip 3s linear infinite; animation-delay: 0s; }
+a.logo svg:nth-child(2) path:nth-child(1) { animation: strokeColorFlip 3s linear infinite; animation-delay: 1s; }
+a.logo svg:nth-child(2) path:nth-child(2) { animation: fillColorFlip 3s linear infinite; animation-delay: 1s; }
+a.logo svg:nth-child(3) path:nth-child(1) { animation: strokeColorFlip 3s linear infinite; animation-delay: 2s; }
+a.logo svg:nth-child(3) path:nth-child(2) { animation: fillColorFlip 3s linear infinite; animation-delay: 2s; }
+
+@keyframes strokeColorFlip {
+  0% { @apply stroke-dracular-cyan; }
+  25% { @apply stroke-dracular-pink; }
+  50% { @apply stroke-dracular-green; }
+  75% { @apply stroke-dracular-orange; }
+  100% { @apply stroke-dracular-cyan; }
+}
+
+@keyframes fillColorFlip {
+  0% { @apply fill-dracular-cyan; }
+  25% { @apply fill-dracular-pink; }
+  50% { @apply fill-dracular-green; }
+  75% { @apply fill-dracular-orange; }
+  100% { @apply fill-dracular-cyan; }
+}
 /* Header End */
 
 /* TOP Start */
@@ -84,3 +109,267 @@ section.top p {
 }
 
 /* TOP End */
+
+/* About Start */
+section.about {
+  @apply h-screen
+    flex flex-col justify-center
+  ;
+}
+
+section.about div.wrap {
+  @apply self-center
+    mx-auto max-w-screen-lg
+  ;
+}
+
+section.about div.title {
+  @apply text-dracular-text bg-dracular-dark
+    text-lg mb-12
+  ;
+}
+
+section.about div.title h2 {
+  @apply bg-dracular-bg inline-block
+    border-t-dracular-pink border-t-2
+    p-2
+  ;
+}
+
+section.about div.content {
+  @apply flex gap-y-4
+  ;
+}
+
+section.about div.left,
+section.about div.right {
+  @apply flex-1;
+}
+
+section.about div.right {
+  @apply text-center
+  ;
+}
+
+section.about div.left {
+  @apply text-dracular-comment
+  ;
+}
+
+section.about div.left p {
+  @apply py-1
+  ;
+}
+
+section.about div.left p span {
+  @apply text-dracular-cyan
+  ;
+}
+/* About End */
+
+/* Experience Start */
+section.experience {
+  @apply h-screen
+    flex flex-col justify-center
+  ;
+}
+
+section.experience div.wrap {
+  @apply self-center
+    mx-auto max-w-screen-lg
+  ;
+}
+
+section.experience div.title {
+  @apply text-dracular-text bg-dracular-dark
+    text-lg
+    mb-12
+  ;
+}
+
+section.experience div.title h2 {
+  @apply bg-dracular-bg inline-block
+    border-t-dracular-pink border-t-2
+    p-2
+  ;
+}
+
+section.experience div.content {
+  @apply flex gap-y-12 flex-col
+  ;
+}
+
+section.experience div.content h2 {
+  @apply text-dracular-text text-xl
+  ;
+}
+
+section.experience div.content h2 span {
+  @apply text-dracular-green;
+}
+
+section.experience div.content h4 {
+  @apply text-dracular-orange text-lg italic;
+}
+
+section.experience div.content ul {
+  @apply list-disc
+    pl-4 text-dracular-green
+  ;
+}
+
+section.experience div.content h5 {
+  @apply border-l px-2 bg-dracular-dark inline-block;
+}
+
+section.experience div.content h5,
+section.experience div.content ul li p {
+  @apply text-dracular-comment
+  ;
+}
+
+section.experience div.content div > * {
+  @apply py-1
+}
+/* Experience End */
+
+/* Work Start */
+section.work {
+  @apply min-h-screen
+    flex flex-col justify-center pb-12
+  ;
+}
+
+section.work div.wrap {
+  @apply self-center
+    mx-auto max-w-screen-lg
+  ;
+}
+
+section.work div.title {
+  @apply text-dracular-text bg-dracular-dark
+    text-lg
+    mb-12
+  ;
+}
+
+section.work div.title h2 {
+  @apply bg-dracular-bg inline-block
+    border-t-dracular-pink border-t-2
+    p-2
+  ;
+}
+
+section.work div.content {
+  @apply flex gap-y-24 flex-col
+  ;
+}
+
+section.work div.content h2 {
+  @apply text-dracular-text text-lg pb-4
+  ;
+}
+
+section.work div.content h2 span {
+  @apply text-dracular-green text-lg
+  ;
+}
+
+section.work div.content > div {
+  @apply flex gap-6 text-right
+  ;
+}
+
+section.work div.content > div:nth-child(2n) {
+  @apply flex-row-reverse text-left
+  ;
+}
+
+section.work div.content > div > div {
+  @apply flex-1;
+}
+
+section.work div.desc p {
+  @apply text-dracular-comment
+}
+
+section.work div.desc p span {
+  @apply text-dracular-cyan
+}
+/* Work End */
+/* Contact Start */
+section.contact {
+  @apply h-screen
+    flex flex-col justify-center pb-12
+  ;
+}
+
+section.contact div.wrap {
+  @apply self-center
+    mx-auto max-w-screen-lg
+  ;
+}
+
+section.contact div.title {
+  @apply text-dracular-text bg-dracular-dark
+    text-lg
+    mb-12
+  ;
+}
+
+section.contact div.title h2 {
+  @apply bg-dracular-bg inline-block
+    border-t-dracular-pink border-t-2
+    p-2
+  ;
+}
+
+section.contact div.content > div {
+  @apply px-72 text-center text-dracular-comment py-6
+  ;
+}
+
+section.contact form textarea {
+  @apply w-full rounded-lg p-2 resize-y;
+}
+
+section.contact form input {
+  @apply border-dracular-cyan border-2 rounded-lg
+    px-4 py-2 mt-4
+    text-dracular-cyan
+    hover:text-dracular-green hover:border-dracular-green
+    hover:scale-105 hover:cursor-pointer
+    transition duration-300
+  ;  
+}
+/* Contact End */
+/* Splash Start */
+section.splash {
+  @apply h-screen w-screen fixed z-10 bg-dracular-dark top-0
+    flex justify-center
+  ;
+}
+
+section.splash svg {
+  @apply self-center;
+}
+
+section.splash svg:nth-child(1) path:nth-child(1) { animation: strokeColorFlip 3s linear infinite; animation-delay: 0s; }
+section.splash svg:nth-child(1) path:nth-child(2) { animation: fillColorFlip 3s linear infinite; animation-delay: 0s; }
+section.splash svg:nth-child(2) path:nth-child(1) { animation: strokeColorFlip 3s linear infinite; animation-delay: 1s; }
+section.splash svg:nth-child(2) path:nth-child(2) { animation: fillColorFlip 3s linear infinite; animation-delay: 1s; }
+section.splash svg:nth-child(3) path:nth-child(1) { animation: strokeColorFlip 3s linear infinite; animation-delay: 2s; }
+section.splash svg:nth-child(3) path:nth-child(2) { animation: fillColorFlip 3s linear infinite; animation-delay: 2s; }
+/* Splash End */
+
+/* Footer Start */
+section.footer {
+  @apply w-screen bg-dracular-bg;
+  ;
+}
+
+section.footer > div {
+  @apply flex flex-wrap justify-between items-center mx-auto max-w-screen-xl
+  ;
+}
+/* Footer End */

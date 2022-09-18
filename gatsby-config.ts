@@ -33,7 +33,16 @@ const config: GatsbyConfig = {
         "path": "./src/images/"
       },
       __key: "images"
-    }, "gatsby-plugin-postcss"]
+    }, "gatsby-plugin-postcss",
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
+        }
+      }
+    }
+  ]
 };
 
 export default config;
