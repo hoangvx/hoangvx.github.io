@@ -94,15 +94,15 @@ section.top > div {
 }
 
 section.top h5 {
-  @apply text-dracular-pink text-2xl;
+  @apply text-dracular-pink text-xl md:text-2xl;
 }
 
 section.top h1 {
-  @apply text-dracular-green text-6xl;
+  @apply text-dracular-green text-4xl md:text-6xl;
 }
 
 section.top h3 {
-  @apply text-dracular-orange text-5xl;
+  @apply text-dracular-orange text-2xl md:text-5xl;
 }
 
 section.top p {
