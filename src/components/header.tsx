@@ -4,7 +4,7 @@ const Header = () => {
   const iconSize = 40;
 
   return (
-    <nav>
+    <nav id="header">
       <div>
         <a href="/" className="logo">
           <svg width={iconSize} height={iconSize} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,11 +22,11 @@ const Header = () => {
         </a>
 
         <div className="menu">
-          <a href="#" className="menu-item">#1. About Me</a>
-          <a href="#" className="menu-item">#2. Experience</a>
-          <a href="#" className="menu-item">#3. Works</a>
-          <a href="#" className="menu-item">#4. Contact</a>
-          <a href="#" className="menu-item menu-btn">Resume</a>
+          <a href="#about" className="menu-item">#1. About Me</a>
+          <a href="#experience" className="menu-item">#2. Experience</a>
+          <a href="#work" className="menu-item">#3. Works</a>
+          <a href="#contact" className="menu-item">#4. Contact</a>
+          <a href="#resume" className="menu-item menu-btn">Resume</a>
         </div>
       </div>
     </nav>

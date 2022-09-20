@@ -2,7 +2,7 @@ import * as React from "react"
 
 const Top = () => {
   return (
-    <section className="top">
+    <section id="top" className="top">
       <div>
         <h5>Hi, my name is</h5>
         <h1>VO XUAN HOANG.</h1>

@@ -3,7 +3,7 @@ import * as React from "react"
 
 const Footer = () => {
   return (
-    <section className="footer">
+    <section id="footer" className="footer">
       <div>
         <div>
           <span className="copyright">Copyright © 2022 | Vo Xuan Hoang</span>
