@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .direction-ltr {
+    direction: ltr;
+  }
+
+  .direction-rtl {
+    direction: rtl;
+  }
+}
+
 @font-face {
   font-family: "Cascadia Mono";
   src: url("../fonts/CascadiaMono.woff2");
@@ -264,16 +274,6 @@ section.work div.content {
   ;
 }
 
-section.work div.content h2 {
-  @apply text-dracular-text text-lg pb-4
-  ;
-}
-
-section.work div.content h2 span {
-  @apply text-dracular-green text-lg
-  ;
-}
-
 section.work div.content > div {
   @apply flex
     flex-col md:flex-row
@@ -293,12 +293,57 @@ section.work div.content > div > div {
 }
 
 section.work div.desc p {
-  @apply text-dracular-comment
+  @apply text-dracular-comment py-2
 }
 
 section.work div.desc p span {
   @apply text-dracular-cyan
 }
+
+section.work div.desc h2 {
+  @apply text-dracular-text text-lg
+  ;
+}
+
+section.work div.desc h2 span {
+  @apply text-dracular-green
+  ;
+}
+
+section.work div.desc a {
+  @apply text-dracular-pink hover:underline
+  pb-2
+  ;
+}
+
+section.work div.desc ul {
+  @apply list-disc text-dracular-green text-sm
+    direction-ltr columns-1 list-inside
+    md:direction-rtl md:columns-2
+  ;
+}
+
+section.work div.content > div:nth-child(2n) ul {
+  @apply direction-ltr;
+}
+/* 
+@media screen(md) {
+  section.work div.desc ul {
+    direction: rtl;
+  }
+} */
+
+section.work div.desc ul li {
+  @apply py-1
+  ;
+}
+
+section.work div.desc ul li p {
+  @apply text-dracular-comment bg-dracular-selection inline-block
+  px-1 py-0
+  ;
+}
+
 /* Work End */
 /* Contact Start */
 section.contact {
