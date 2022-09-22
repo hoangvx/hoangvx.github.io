@@ -1,5 +1,50 @@
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
+import { ReactNode, Children, useState } from "react"
+
+type CarouselProps = {
+  children?: ReactNode;
+};
+
+const CarouselItem = ({ children }: CarouselProps) => {
+  return (
+    <div className="carousel-item">
+      { children }
+    </div>
+  )
+}
+
+const Carousel = ({ children } : CarouselProps) => {
+  const [activeIndex, setActiveIndex] = useState<number>(1)
+
+  const updateIndex = (newIndex: number) => {
+    if (newIndex < 0) {
+      newIndex = 0;
+    } else if (newIndex >= Children.count(children)) {
+       newIndex = Children.count(children) - 1;
+    }
+
+    setActiveIndex(newIndex);
+  }
+
+  return (
+    <div className="carousel">
+      <div className="inner"
+        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+      >
+        {Children.map(children, (child, index) => child)}
+      </div>
+      <div className="indicators">
+        <button
+          onClick={() => updateIndex(activeIndex - 1)}
+        >Prev</button>
+        <button
+          onClick={() => updateIndex(activeIndex + 1)}
+        >Next</button>
+      </div>
+    </div>
+  )
+}
 
 const Work = () => {
   return (
@@ -12,7 +57,17 @@ const Work = () => {
         <div className="content">
           <div>
             <div className="gallery">
-              <StaticImage src="../images/nasa.jpg" alt="nano" />
+              <Carousel>
+                <CarouselItem>
+                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                </CarouselItem>
+                <CarouselItem>
+                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                </CarouselItem>
+                <CarouselItem>
+                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                </CarouselItem>
+              </Carousel>
             </div>
             <div className="desc">
               <h2>## Car Snapshot App <span>@ IDOM Inc.</span></h2>

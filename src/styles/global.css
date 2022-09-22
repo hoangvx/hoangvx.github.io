@@ -326,12 +326,6 @@ section.work div.desc ul {
 section.work div.content > div:nth-child(2n) ul {
   @apply direction-ltr;
 }
-/* 
-@media screen(md) {
-  section.work div.desc ul {
-    direction: rtl;
-  }
-} */
 
 section.work div.desc ul li {
   @apply py-1
@@ -442,6 +436,20 @@ section.footer .copyright {
 }
 /* Footer End */
 
+/* Carousel */
+.carousel {
+  @apply overflow-hidden;
+}
+
+.carousel .inner {
+  @apply whitespace-nowrap duration-300;
+}
+
+.carousel .carousel-item {
+  @apply inline-flex items-center justify-center;
+}
+
+/* Shared */
 p span {
   @apply text-dracular-cyan
   ;
