@@ -37,10 +37,10 @@ const Carousel = ({ children } : CarouselProps) => {
       <div className="indicators">
         <button
           onClick={() => updateIndex(activeIndex - 1)}
-        >Prev</button>
+        />
         <button
           onClick={() => updateIndex(activeIndex + 1)}
-        >Next</button>
+        />
       </div>
     </div>
   )
@@ -84,7 +84,17 @@ const Work = () => {
           </div>
           <div>
             <div className="gallery">
-              <StaticImage src="../images/nasa.jpg" alt="nano" />
+              <Carousel>
+                <CarouselItem>
+                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                </CarouselItem>
+                <CarouselItem>
+                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                </CarouselItem>
+                <CarouselItem>
+                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                </CarouselItem>
+              </Carousel>
             </div>
             <div className="desc">
               <h2>## Car Price Calculate API <span>@ IDOM Inc.</span></h2>
@@ -105,7 +115,17 @@ const Work = () => {
           </div>
           <div>
             <div className="gallery">
-              <StaticImage src="../images/nasa.jpg" alt="nano" />
+              <Carousel>
+                <CarouselItem>
+                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                </CarouselItem>
+                <CarouselItem>
+                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                </CarouselItem>
+                <CarouselItem>
+                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                </CarouselItem>
+              </Carousel>
             </div>
             <div className="desc">
               <h2>## Gulliver Frima <span>@ IDOM Inc.</span></h2>
@@ -123,7 +143,17 @@ const Work = () => {
           </div>
           <div>
             <div className="gallery">
-              <StaticImage src="../images/nasa.jpg" alt="nano" />
+              <Carousel>
+                <CarouselItem>
+                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                </CarouselItem>
+                <CarouselItem>
+                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                </CarouselItem>
+                <CarouselItem>
+                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                </CarouselItem>
+              </Carousel>
             </div>
             <div className="desc">
               <h2>## Mobi1 <span>@ IDOM Inc.</span></h2>
