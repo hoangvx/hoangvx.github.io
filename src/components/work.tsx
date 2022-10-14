@@ -15,7 +15,7 @@ const CarouselItem = ({ children }: CarouselProps) => {
 }
 
 const Carousel = ({ children } : CarouselProps) => {
-  const [activeIndex, setActiveIndex] = useState<number>(1)
+  const [activeIndex, setActiveIndex] = useState<number>(0)
 
   const updateIndex = (newIndex: number) => {
     if (newIndex < 0) {
@@ -57,17 +57,11 @@ const Work = () => {
         <div className="content">
           <div>
             <div className="gallery">
-              <Carousel>
+              {/* <Carousel>
                 <CarouselItem>
-                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                  <StaticImage src="../images/work-app-01.png" alt="app" />
                 </CarouselItem>
-                <CarouselItem>
-                  <StaticImage src="../images/nasa.jpg" alt="nano" />
-                </CarouselItem>
-                <CarouselItem>
-                  <StaticImage src="../images/nasa.jpg" alt="nano" />
-                </CarouselItem>
-              </Carousel>
+              </Carousel> */}
             </div>
             <div className="desc">
               <h2>## Car Snapshot App <span>@ IDOM Inc.</span></h2>
@@ -84,7 +78,7 @@ const Work = () => {
           </div>
           <div>
             <div className="gallery">
-              <Carousel>
+              {/* <Carousel>
                 <CarouselItem>
                   <StaticImage src="../images/nasa.jpg" alt="nano" />
                 </CarouselItem>
@@ -94,7 +88,7 @@ const Work = () => {
                 <CarouselItem>
                   <StaticImage src="../images/nasa.jpg" alt="nano" />
                 </CarouselItem>
-              </Carousel>
+              </Carousel> */}
             </div>
             <div className="desc">
               <h2>## Car Price Calculate API <span>@ IDOM Inc.</span></h2>
@@ -115,17 +109,11 @@ const Work = () => {
           </div>
           <div>
             <div className="gallery">
-              <Carousel>
+              {/* <Carousel>
                 <CarouselItem>
-                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                  <StaticImage src="../images/work-frima-01.png" alt="frima" />
                 </CarouselItem>
-                <CarouselItem>
-                  <StaticImage src="../images/nasa.jpg" alt="nano" />
-                </CarouselItem>
-                <CarouselItem>
-                  <StaticImage src="../images/nasa.jpg" alt="nano" />
-                </CarouselItem>
-              </Carousel>
+              </Carousel> */}
             </div>
             <div className="desc">
               <h2>## Gulliver Frima <span>@ IDOM Inc.</span></h2>
@@ -143,17 +131,11 @@ const Work = () => {
           </div>
           <div>
             <div className="gallery">
-              <Carousel>
+              {/* <Carousel>
                 <CarouselItem>
-                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                  <StaticImage src="../images/work-mobi1-01.png" alt="mobi1" />
                 </CarouselItem>
-                <CarouselItem>
-                  <StaticImage src="../images/nasa.jpg" alt="nano" />
-                </CarouselItem>
-                <CarouselItem>
-                  <StaticImage src="../images/nasa.jpg" alt="nano" />
-                </CarouselItem>
-              </Carousel>
+              </Carousel> */}
             </div>
             <div className="desc">
               <h2>## Mobi1 <span>@ IDOM Inc.</span></h2>
