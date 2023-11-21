@@ -9,6 +9,29 @@ const Experience = () => {
         </div>
 
         <div className="content">
+        <div>
+            <h2>## Solution Architech <span>@ FPT Software.</span></h2>
+            <h4>**Japan, Tokyo**</h4>
+            <h5>&gt; January 2023 - Present</h5>
+            <ul>
+              <li>
+                <p>
+                  Work on <span>oversea</span> team as <span>solution architech</span> and <span>team leader</span>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Designed solution to help customer migrate their legacy system to high-end technology on cloud.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Experienced with legacy technology, languages likes <span>Linkexpress, MSP, XSP, COBOL, JCL, ADL, ...</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+
           <div>
             <h2>## Fullstack Engineer <span>@ IDOM Inc.</span></h2>
             <h4>**Japan, Tokyo**</h4>

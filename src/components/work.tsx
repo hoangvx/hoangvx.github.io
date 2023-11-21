@@ -67,14 +67,15 @@ const Work = () => {
               </Carousel> */}
             </div>
             <div className="desc">
-              <h2>## NHK Global Business System migration <span>@ FPT Software.</span></h2>
+              <h2>## NHK Global System migration <span>@ FPT Software.</span></h2>
               <p>
                 Migrate legacy system from fujitsu mainframe to open system on cloud computing (GCP)
               </p>  
               <ul>
-                <li><p>Cobol, Jcl, etc...</p></li>
+                <li><p>Cobol, Jcl</p></li>
                 <li><p>GCP</p></li>
                 <li><p>JAVA</p></li>
+                <li><p>EcoSystem (IF, Printing)</p></li>
               </ul>
             </div>
           </div>
