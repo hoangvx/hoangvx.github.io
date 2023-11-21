@@ -59,6 +59,29 @@ const Work = () => {
             <div className="gallery">
               {/* <Carousel>
                 <CarouselItem>
+                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                </CarouselItem>
+                <CarouselItem>
+                  <StaticImage src="../images/nasa.jpg" alt="nano" />
+                </CarouselItem>
+              </Carousel> */}
+            </div>
+            <div className="desc">
+              <h2>## NHK Global Business System migration <span>@ FPT Software.</span></h2>
+              <p>
+                Migrate legacy system from fujitsu mainframe to open system on cloud computing (GCP)
+              </p>  
+              <ul>
+                <li><p>Cobol, Jcl, etc...</p></li>
+                <li><p>GCP</p></li>
+                <li><p>JAVA</p></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div className="gallery">
+              {/* <Carousel>
+                <CarouselItem>
                   <StaticImage src="../images/work-app-01.png" alt="app" />
                 </CarouselItem>
               </Carousel> */}

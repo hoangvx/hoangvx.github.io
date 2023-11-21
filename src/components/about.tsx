@@ -15,11 +15,14 @@ const About = () => {
               Hi, I am Vo Xuan Hoang.
             </p>
             <p>
-              I have been working on <span>web development</span> for five years, in a agile (scrum) team, 
-              with several of languages like <span>ruby, python, nodejs, javascripts, html, ect...</span>
+              I have been working on <span>web development</span> for over 8 years, experience in both waterfall and agile (scrum) team, 
+              with several of languages like <span>ruby, python, nodejs, javascripts, html, cobol, ect...</span>
             </p>
             <p>
               Not only frontend and backend development, I also have a deep understanding about cloud computing like <span>AWS</span>
+            </p>
+            <p>
+              Lately, I've been working on some <span>legacy</span> migration projects. Migrate from cobol mainframe to open cloud platform like <span>GCP, AWS</span>
             </p>
             <p>
               Lastly, I am a <span>quick learner</span> and I love to learn new things.
