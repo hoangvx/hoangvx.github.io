@@ -26,7 +26,7 @@ const Header = () => {
           <a href="#experience" className="menu-item">#2. Experience</a>
           <a href="#work" className="menu-item">#3. Works</a>
           <a href="#contact" className="menu-item">#4. Contact</a>
-          <a href="#resume" className="menu-item menu-btn">Resume</a>
+          <a download href={'/hoangvx.resume.pdf'} className="menu-item menu-btn">Resume</a>
         </div>
       </div>
     </nav>
